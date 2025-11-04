@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.tc {
+  color: #253d4e;
+}
+.tp {
+  color: #7e7e7e;
+}
+.tg {
+  color: #3bb77e;
+}
+.tb {
+  background-color: #3bb77e;
+}
+.th {
+  color: #fdc040;
+}
+.fh {
+  font-size: 40px;
+}
+
+.custom-bullet {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+.swiper-pagination-bullet-active.custom-bullet {
+  background: #3bb77e;
+  width: 24px;
+  border-radius: 10px;
+}

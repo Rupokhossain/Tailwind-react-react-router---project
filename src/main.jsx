@@ -7,6 +7,7 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Home from "./Pages/Home";
+import Features from "./Pages/Features/Features";
 
 const router = createBrowserRouter([
   {

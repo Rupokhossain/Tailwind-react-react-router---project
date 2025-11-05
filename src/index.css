@@ -34,3 +34,9 @@
   width: 24px;
   border-radius: 10px;
 }
+
+
+.button:hover i {
+    margin-left: 10px;
+    transition-duration: 0.3s;
+}

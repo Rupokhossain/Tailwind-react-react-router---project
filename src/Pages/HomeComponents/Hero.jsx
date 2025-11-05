@@ -39,13 +39,13 @@ export default function App() {
         slidesPerView={1}
         loop={true}
         autoplay={{
-          delay: 3000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         navigation={{
           // clickable: true,
-          prevEl: ".swiper-button-prev",
-          nextEl: ".swiper-button-next",
+          prevEl: ".hero-prev",
+          nextEl: ".hero-next",
         }}
         pagination={{
           clickable: true,
@@ -107,15 +107,17 @@ export default function App() {
       </Swiper>
 
       {/* custom navigation */}
-      <div className="swiper-button-prev group absolute top-50  bg-white hover:bg-[#3BB77E] hover:text-white text-tp border-[#3BB77E] w-12 h-12 rounded-full cursor-pointer transition-all duration-300">
-        <div className="">
-          <MdOutlineArrowBackIosNew className="group-hover:text-white" />
+      <div className="absolute inset-0 flex justify-between items-center px-6 z-10 pointer-events-none" >
+        <div className="hero-prev group bg-white hover:bg-[#3BB77E] hover:text-white text-tp border-[#3BB77E] w-12 h-12 rounded-full cursor-pointer transition-all duration-300 flex items-center justify-center pointer-events-auto">
+          <div className="">
+            <MdOutlineArrowBackIosNew className="group-hover:text-white" />
+          </div>
         </div>
-      </div>
 
-      <div className="swiper-button-next group absolute top-50  bg-white hover:bg-[#3BB77E] hover:text-white text-tp border-[#3BB77E] w-12 h-12 rounded-full cursor-pointer transition-all duration-300">
-        <div className="">
-          <MdOutlineArrowForwardIos className="group-hover:text-white" />
+        <div className="hero-next group bg-white hover:bg-[#3BB77E] hover:text-white text-tp border-[#3BB77E] w-12 h-12 rounded-full cursor-pointer transition-all duration-300 flex items-center justify-center pointer-events-auto">
+          <div className="">
+            <MdOutlineArrowForwardIos className="group-hover:text-white" />
+          </div>
         </div>
       </div>
     </div>

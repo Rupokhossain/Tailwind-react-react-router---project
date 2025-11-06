@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Home from "./Pages/Home";
 import Features from "./Pages/Features/Features";
+import SingleProducts from "./Pages/HomeComponents/PopularProducts/SingleProducts";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/product/:id",
+        element: <SingleProducts />,
       },
     ],
   },
